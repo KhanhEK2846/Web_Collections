@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    padding: 0 16px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    flex-shrink: 0;
+    width: 100px;
+    height: 90%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    
+}
+
+.card.active{
+    width: 100%;
+    flex-shrink: 1;
+}
