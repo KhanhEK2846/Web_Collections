@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: rgb(132, 132, 255);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .spinner{
+    height: 500px;
+    width: 500px;
+    background: #fff;
+    animation: flip 4s linear infinite;
+  }
+  
+  @keyframes flip {
+
+    0%{
+         transform:  rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+
+    25%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+    }
+
+    50%{
+        transform:  rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    75%{
+       transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+
+    100%{
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+
+
+  }
